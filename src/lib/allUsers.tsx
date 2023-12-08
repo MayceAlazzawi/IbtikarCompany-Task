@@ -11,7 +11,6 @@ export async function fetchAllUsers() {
       );
     }
     let res = response.json()
+    console.log(res)
     return res;
 }
-
-console.log("hello")

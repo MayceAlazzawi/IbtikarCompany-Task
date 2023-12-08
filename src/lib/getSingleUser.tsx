@@ -1,11 +1,9 @@
 
-
-export async function fetchSingleUser(id: number) {
-    let url = `https://dummyjson.com/users/${id}`;
+export async function fetchSingleUser(slug: string) {
+    let url = `https://dummyjson.com/users/${slug}`;
     const response = await fetch(url)
     if (!response.ok) {
       let error = await response.text();
-      error = await response.text();
      
       throw new Error(
         `Failed to fetch data ${error}`,
@@ -14,5 +12,3 @@ export async function fetchSingleUser(id: number) {
     let res = response.json()
     return res;
 }
-
-console.log("hello")
