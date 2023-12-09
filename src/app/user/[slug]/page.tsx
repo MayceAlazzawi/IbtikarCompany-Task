@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React, { useContext, useState } from "react";
+import React from "react";
 import Image from "next/image";
 import { fetchSingleUser } from '@/lib/getSingleUser';
 import Modal from "../../../components/modal";

@@ -69,7 +69,7 @@ export default function page() {
               firstName,
               age,
               email,
-              gender: 'male', // TODO add gender fields to the form
+              gender: 'male',
             }]);
             router.push('/users');
           }}

@@ -7,7 +7,6 @@ export async function fetchAdd(firstName:string, age?:string, email?: string) {
     firstName: firstName,
     email: email,
     age: age,
-    /* other user data */
   })
 })
 .then(res => res.json())
