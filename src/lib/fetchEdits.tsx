@@ -1,6 +1,6 @@
 
-export async function fetchEdits(firstName:string, age?:string, email?: string, phone?: string, city?:string, bloodGroup?: string) {
-   let response =  fetch('https://dummyjson.com/users/1', {
+export async function fetchEdits(slug:any, firstName:string, age?:string, email?: string, phone?: string, city?:string, bloodGroup?: string) {
+   let response =  fetch(`https://dummyjson.com/users/${slug}`, {
         method: 'PUT', /* or PATCH */
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

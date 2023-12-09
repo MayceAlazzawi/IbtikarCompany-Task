@@ -1,3 +1,5 @@
+module.exports = {}
+
 module.exports = {
     images: {
       remotePatterns: [
@@ -5,7 +7,6 @@ module.exports = {
           protocol: 'https',
           hostname: 'robohash.org',
           port: '',
-        //   pathname: '/account123/*`*',
         },
       ],
     },
